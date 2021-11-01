@@ -35,7 +35,7 @@ namespace ticks_but_clear
                     string[] position_values = { position1.value, position2.value, position3.value, position4.value, position5.value, position6.value, position7.value, position8.value, position9.value };
                     bool[] position_isFrees = { position1.isFree, position2.isFree, position3.isFree, position4.isFree, position5.isFree, position6.isFree, position7.isFree, position8.isFree, position9.isFree };
                     int position_chosen_main = 0;
-                    string symbol_of_this_turn = "r";
+                    string symbol_of_this_turn = " ";
                     int turn_counter = 0;
                     Change_the_symbol(ref turn_counter, ref position_chosen_main, ref symbol_of_this_turn, ref position_values, ref position_isFrees);
                 }
@@ -156,12 +156,13 @@ namespace ticks_but_clear
                 public static void Draw_First()
                 {
                     Console.WriteLine("╔═╦═╦═╗");
-                    Console.WriteLine("║ ║ ║ ║");
+                    Console.WriteLine("║7║8║9║");
                     Console.WriteLine("╠═╬═╬═╣");
-                    Console.WriteLine("║ ║ ║ ║");
+                    Console.WriteLine("║4║5║6║");
                     Console.WriteLine("╠═╬═╬═╣");
-                    Console.WriteLine("║ ║ ║ ║");
+                    Console.WriteLine("║1║2║3║");
                     Console.WriteLine("╚═╩═╩═╝");
+                    Console.WriteLine("o's start first. Use keypad to play");
                 }
 
             }
