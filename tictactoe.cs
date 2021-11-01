@@ -116,7 +116,7 @@ namespace ticks_but_clear
                         Console.WriteLine("");
                         Console.WriteLine("Press ESC to exit");
                         System.ConsoleKey k = Console.ReadKey().Key;
-                        if (k == ConsoleKey.Escape)
+                        if ((k == ConsoleKey.Escape) | (k == ConsoleKey.Enter))
                         {
                             Environment.Exit(0);
                         }
@@ -126,11 +126,11 @@ namespace ticks_but_clear
                         Console.WriteLine("It's a draw! No one loses!");
                         Console.WriteLine("");
                         Console.WriteLine("Press ESC to exit");
-                       System.ConsoleKey k=Console.ReadKey().Key;
-                        if (k == ConsoleKey.Escape)
-                        {
-                            Environment.Exit(0);
-                        }
+                        System.ConsoleKey k = Console.ReadKey().Key;
+                        if ((k == ConsoleKey.Escape) | (k == ConsoleKey.Enter))
+                            {
+                                Environment.Exit(0);
+                            }
                     }
                 }
                 static string Get_symbol_of_this_turn(ref int turn_counter, out string symbol_of_this_turn)
