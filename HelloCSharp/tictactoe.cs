@@ -2,15 +2,16 @@
 
 namespace ticks_but_clear
 {
-    class tictactoe
+    public class tictactoe
     {
-        class Game
+        public class Game
         {
             public static void Initiate()
             {
                 Core.Draw_First();
                 Core.Start();
             }
+
             class Core
             {
                 public class position
@@ -23,9 +24,9 @@ namespace ticks_but_clear
 
                 public static void Start()
                 {
-                    position position1 = new position(1);
-                    position position2 = new position(2);
-                    position position3 = new position(3);
+                    var position1 = new position(1);
+                    var position2 = new position(2);
+                    var position3 = new position(3);
                     position position4 = new position(4);
                     position position5 = new position(5);
                     position position6 = new position(6);
@@ -167,10 +168,10 @@ namespace ticks_but_clear
 
             }
         }
-        static void Main(string[] args)
-        {
-            Game.Initiate();
-        }
+        //static void Main(string[] args)
+        //{
+        //    Game.Initiate();
+        //}
 
     }
 }
